@@ -30,4 +30,7 @@ jobs:
         run: |
             #!/bin/bash
             set +e
-            ./a.out 2>&1 | grep ERROR
+            for i in {1..100};do
+              echo "Run $i"
+              ./a.out 2>&1 | grep ERROR
+            done
