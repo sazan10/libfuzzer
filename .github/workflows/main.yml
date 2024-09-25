@@ -30,4 +30,4 @@ jobs:
         run: |
             #!/bin/bash
             set +e
-            ./a.out 2>&1 | grep ERROR
+            ./a.out 
